@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class ProgressController extends Controller
 {
-    //
+   public function index()
+{
+    return view('progress.index');
+}
 }
