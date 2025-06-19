@@ -1,4 +1,3 @@
-
 <x-app-layout>
   <div class="flex h-screen bg-gray-100">
     <x-sidebar-layout> </x-sidebar-layout>
@@ -13,4 +12,3 @@
     </main>
   </div>
 </x-app-layout>
-
