@@ -20,9 +20,6 @@
                                class="text-sm px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-md">
                                 View Course
                             </a>
-                            <button class="text-sm text-gray-600 hover:text-gray-900 flex items-center gap-1">
-                                📤 Share
-                            </button>
                         </div>
                     </div>
                 @empty

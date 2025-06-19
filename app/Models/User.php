@@ -25,15 +25,19 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Lesson::class, 'lesson_user');
     }
-      public function courses()
-{
-    return $this->belongsToMany(Course::class);
-}
-public function index()
-{
-    // Get 5 most recent students by creation time
-    $recentStudents = User::latest()->take(5)->get();
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class);
+    }
+    public function index()
+    {
+        // Get 5 most recent students by creation time
+        $recentStudents = User::latest()->take(5)->get();
 
-    return view('admin.dashboard', compact('recentStudents'));
-}
+        return view('admin.dashboard', compact('recentStudents'));
+    }
+    public function lessons()
+    {
+        return $this->belongsToMany(Lesson::class, 'lesson_user');
+    }
 }

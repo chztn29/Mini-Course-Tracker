@@ -24,8 +24,8 @@
                 <a href="{{ route('courses.index') }}" class="flex items-center px-3 py-3 rounded-md {{ request()->routeIs('courses.index') ? 'bg-gray-700 text-white' : 'hover:bg-gray-700' }} transition">
                     📦 <span class="ml-3">My Courses</span>
                 </a>
-                <a href="{{ route('settings.index') }}" class="flex items-center px-3 py-3 rounded-md {{ request()->routeIs('settings.index') ? 'bg-gray-700 text-white' : 'hover:bg-gray-700' }} transition">
-                    ⚙️ <span class="ml-3">Settings</span>
+                <a href="{{ route('users.index') }}" class="flex items-center px-3 py-3 rounded-md {{ request()->routeIs('users.index') ? 'bg-gray-700 text-white' : 'hover:bg-gray-700' }} transition">
+                    📄 <span class="ml-3">Completed Lessons</span>
                 </a>
             </nav>
 
