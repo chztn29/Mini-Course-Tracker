@@ -7,20 +7,16 @@ use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
-    // Show all courses
     public function index()
-{
-    return view('courses.index');
-}
-
-
-    // Show a single course and its lessons
-    public function show(Course $course)
     {
-        $course->load('lessons'); // eager load lessons
+        $courses = Course::all(); // or paginate() if needed
 
-        return view('courses.show', compact('course'));
+        return view('courses.index', compact('courses'));
     }
 
-    // You can later add create, store, edit, update, destroy if needed
+    public function show($id)
+    {
+        $course = Course::with('lessons')->findOrFail($id);
+        return view('courses.show', compact('course'));
+    }
 }
