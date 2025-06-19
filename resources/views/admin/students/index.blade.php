@@ -10,28 +10,19 @@
                         <th class="p-2">Student Name</th>
                         <th class="p-2">Email</th>
                         <th class="p-2">Enrolled Courses</th>
-                        <th class="p-2">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="p-2">1</td>
-                        <td class="p-2">Juan Dela Cruz</td>
-                        <td class="p-2">juan@example.com</td>
-                        <td class="p-2">Laravel, CSS</td>
-                        <td class="p-2">
-                            <button class="text-blue-600 hover:underline">View</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="p-2">2</td>
-                        <td class="p-2">Maria Santos</td>
-                        <td class="p-2">maria@example.com</td>
-                        <td class="p-2">HTML</td>
-                        <td class="p-2">
-                            <button class="text-blue-600 hover:underline">View</button>
-                        </td>
-                    </tr>
+                    @foreach ($students as $index => $student)
+                        <tr>
+                            <td class="p-2">{{ $index + 1 }}</td>
+                            <td class="p-2">{{ $student->name }}</td>
+                            <td class="p-2">{{ $student->email }}</td>
+                            <td class="p-2">
+                                {{ $student->courses->pluck('name')->join(', ') }}
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

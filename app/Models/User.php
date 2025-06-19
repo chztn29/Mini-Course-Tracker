@@ -45,4 +45,15 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+      public function courses()
+{
+    return $this->belongsToMany(Course::class);
+}
+public function index()
+{
+    // Get 5 most recent students by creation time
+    $recentStudents = User::latest()->take(5)->get();
+
+    return view('admin.dashboard', compact('recentStudents'));
+}
 }
