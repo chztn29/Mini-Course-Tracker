@@ -24,16 +24,13 @@
                 <a href="{{ route('courses.index') }}" class="flex items-center px-3 py-3 rounded-md {{ request()->routeIs('courses.index') ? 'bg-gray-700 text-white' : 'hover:bg-gray-700' }} transition">
                     📦 <span class="ml-3">My Courses</span>
                 </a>
-                <a href="{{ route('progress.index') }}" class="flex items-center px-3 py-3 rounded-md {{ request()->routeIs('progress.index') ? 'bg-gray-700 text-white' : 'hover:bg-gray-700' }} transition">
-                    📊 <span class="ml-3">Progress</span>
-                </a>
                 <a href="{{ route('settings.index') }}" class="flex items-center px-3 py-3 rounded-md {{ request()->routeIs('settings.index') ? 'bg-gray-700 text-white' : 'hover:bg-gray-700' }} transition">
                     ⚙️ <span class="ml-3">Settings</span>
                 </a>
             </nav>
 
             <div class="px-4 py-4 border-t border-gray-700 text-lg font-medium">
-                <div class="mb-3 cursor-pointer flex items-center gap-2">
+                <div class="mb-3 flex items-center gap-2">
                     <span class="text-xl">🧑‍🎓</span>
                     <div>
                         <p class="text-sm font-semibold">{{ Auth::user()->name }}</p>
