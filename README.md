@@ -22,7 +22,7 @@ Built with Laravel (backend) and Tailwind CSS (frontend). </p>
 ```bash
 git clone https://github.com/chztn29/Mini-Course-Tracker.git
 cd Mini-Course-Tracker
-
+<br>
 2. Install Dependencies
 
 ```bash
