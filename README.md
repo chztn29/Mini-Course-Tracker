@@ -16,30 +16,30 @@ Built with Laravel (backend) and Tailwind CSS (frontend). </p>
 - MySQL
 
 <h1> 🔧 Installation </h1> 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/chztn29/Mini-Course-Tracker.git
 cd Mini-Course-Tracker
 
-### 2. Install Dependencies
+2. Install Dependencies
 
 ```bash
 Composer install
 npm install
 
-### 3.  Environment Configuration
+3.  Environment Configuration
 
 ```bash
 cp .env.example .env
 php artisan key:generate
 
-### 4. Database Setup
+4. Database Setup
 ```bash
 php artisan migrate	
 
 
-### 5. Run the development server
+5. Run the development server
 ```bash
 #For Node.js:
 npm run dev
@@ -48,7 +48,7 @@ npm run build
 #For Laravel:
 php artisan serve
 
-### 6. Open http://localhost:8000 in your browser to see the Laravel application. 
+6. Open http://localhost:8000 in your browser to see the Laravel application. 
 
 <h1> 📚 Features Overview </h1>
 
