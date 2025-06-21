@@ -17,26 +17,26 @@ Built with Laravel (backend) and Tailwind CSS (frontend). </p>
 - MySQL
 
 ### Installation
+    ``bahs
 1. Clone the Repository
-
-```bash
+   ```bash
 git clone https://github.com/chztn29/Mini-Course-Tracker.git
 cd Mini-Course-Tracker
-<br>
+     ```bash
 2. Install Dependencies
 
-```bash
+    ```bash
 Composer install
 npm install
-
+    ```bash
 3.  Environment Configuration
-
-'''bash
+   
+    ```bash
 cp .env.example .env
 php artisan key:generate
-
+    ```bash
 4. Database Setup
-'''bash
+    ```bash
 php artisan migrate	
 
 
