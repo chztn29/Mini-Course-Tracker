@@ -2,45 +2,46 @@
 <p> A mini course tracker with a progress bar for every module.
 Built with Laravel (backend) and Tailwind CSS (frontend). </p>
 
-<h1>👨‍💻 Members </h1>
-- Richard Narvaez
-- Aj Mae Saco
-- Chazteen Seraspe
+## 👯‍♂️ Members
 
-<h2> 🚀 Getting Started </h2>
+- **Chazteen Joy Seraspe**  
+- **Richard Narvaez**  
+- **AJ Mae Kudasale Saco**
 
-📋 Prerequisites
+## 🚀 Getting Started
+
+### 📋 Prerequisites
 - PHP (version 8.2 or higher)
 - Composer
 - Node.js (version 16 or higher)
 - MySQL
 
-<h1> 🔧 Installation </h1> 
+### Installation
 1. Clone the Repository
 
-```bash
+'''bash
 git clone https://github.com/chztn29/Mini-Course-Tracker.git
 cd Mini-Course-Tracker
 
 2. Install Dependencies
 
-```bash
+'''bash
 Composer install
 npm install
 
 3.  Environment Configuration
 
-```bash
+'''bash
 cp .env.example .env
 php artisan key:generate
 
 4. Database Setup
-```bash
+'''bash
 php artisan migrate	
 
 
 5. Run the development server
-```bash
+'''bash
 #For Node.js:
 npm run dev
 npm run build
@@ -50,7 +51,7 @@ php artisan serve
 
 6. Open http://localhost:8000 in your browser to see the Laravel application. 
 
-<h1> 📚 Features Overview </h1>
+### 📚 Features Overview 
 
 - Users can *register* or *log in*.
 - After authentication, users are redirected to the *dashboard*.
@@ -69,3 +70,31 @@ php artisan serve
 - The admin can *create*, *edit*, and *delete*:
   - Courses
   - Lessons
+
+7.  Open your browser to [http://localhost:8000](http://localhost:8000) to view the app.
+
+---
+
+## 📁 Project Structure
+
+```
+Mini-Course-Tracker/
+├── app/
+│   ├── Http/Controllers/
+│   ├── Models/
+│   └── ...
+├── resources/
+│   ├── views/              # Blade views (layouts, pages, particials)
+│   ├── css/                # Style files (e.g., Tailwind, Sass)
+│   └── js/                 # JavaScript for interactivity
+├── routes/
+│   └── web.php             # HTTP routes
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/                 # Frontend assets
+├── vite.config.js or webpack.mix.js
+└── ...
+```
+
+---
